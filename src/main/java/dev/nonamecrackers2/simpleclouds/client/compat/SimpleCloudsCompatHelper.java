@@ -83,7 +83,8 @@ public class SimpleCloudsCompatHelper
 	{
 		RendererInitializeResult.Builder result = RendererInitializeResult.builder();
 		if (CompatHelper.isOculusLoaded() && SimpleCloudsMod.dhLoaded())
-			result.addError(null, "Simple Clouds Notice", Component.translatable("gui.simpleclouds.error.compat.dh_oculus"));
+			//result.addError(null, "Simple Clouds Notice", Component.translatable("gui.simpleclouds.error.compat.dh_oculus"));
+			System.out.println("DH+Oculus detected. Upstream doesn't support this!");
 		return result.build();
 	}
 }
